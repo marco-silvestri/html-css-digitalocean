@@ -1,4 +1,4 @@
-/* DEBUG:  */
+/* DEBUG:
 
 [class^="col-"]:nth-of-type(1n+2) {
   background-color: blue;
@@ -10,12 +10,57 @@
 
 .row-bg {
   background: gray;
+} */
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  font-weight: 600;
 }
 
 /* NAV STYLES */
 
 .nav__logo {
-  width: 200px;
+  height: 30px;
+  transform: translateY(-5px);
+}
+
+.nav--white-bg {
+  background-color: #FFF;
+}
+
+.item__dropdown::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.button--nobg-blue {
+  background-color: transparent;
+  border: 1px solid #006aff;
+  border-radius: 3px;
+  font-weight: 400;
+  color: #006aff;
+}
+
+.nav--pad-y {
+  padding: 20px 0;
+}
+
+.nav__col--line-height {
+  line-height: 1.5;
 }
 
 /* HAMBURGER */
