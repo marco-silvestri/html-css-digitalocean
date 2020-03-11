@@ -30,4 +30,15 @@ background-color: red;
 
 .jumbotron__background {
   background-color: lime;
+
+}
+
+/* PARTNERS */
+
+.partners__wrapper {
+vertical-align: middle;
+}
+
+.partners__img {
+  max-width: 150px;
 }
