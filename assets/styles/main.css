@@ -24,8 +24,20 @@ li {
   font-family: 'Roboto', sans-serif;
 }
 
-nav {
+.--disclaimer {
+  font-size: 12px;
+}
+
+.text--bold {
   font-weight: 600;
+}
+
+.text--extra-bold {
+  font-weight: 700;
+}
+
+.text--align-center {
+  text-align: center;
 }
 
 /* NAV STYLES */
@@ -74,8 +86,46 @@ background-color: red;
 /* JUMBOTRON */
 
 .jumbotron__background {
-  background-color: lime;
+  background-image: url("../img/bg-banner-home.jpg");
+  background-position: center;
+  background-size: cover;
+}
 
+.jumbotron__h1--style {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 50px;
+  color: #FFF;
+}
+
+.jumbotron__h2--style {
+  font-size: 20px;
+  color: #FFF;
+}
+
+.form__wrapper {
+  padding: 15px;
+  margin: 50px 15px;
+  background-color: #FFF;
+}
+
+.btn--full-width {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* DEBUG: add media query */
+
+.btn__logo--extra-small::before {
+  position: absolute;
+  left: 10%;
+  background-image: url("../img/google-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  content: " ";
 }
 
 /* PARTNERS */
