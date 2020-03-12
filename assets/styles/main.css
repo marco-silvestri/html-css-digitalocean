@@ -297,12 +297,19 @@ background-color: red;
   margin: 25px 0;
 }
 
-/* CHATBOX */
 
-/* body{
-  margin: 30px;
-  background: #ccc;
-}*/
+/* FOOTER STYLES */
+
+.footer__bg--blue {
+  background-color: #003366;
+}
+
+.sitemap__link {
+  list-style: none;
+  padding: 2px 0;
+}
+
+/* CHATBOX */
 
 .chat {
   position: fixed;
@@ -311,7 +318,7 @@ background-color: red;
   padding-top: 10px;
 }
 
-.chat__avatar--style {
+.chat__avatar {
   width: 50px;
   height: 50px;
   background-color: #006aff;
@@ -340,3 +347,19 @@ background-color: red;
   background: #fff;
   transform: rotate(45deg);
 }
+
+
+/*
+.chat__avatar::before {
+  position: absolute;
+  content: "2";
+  color: #FFF;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #FFF;
+  background-color: #FF0000;
+  bottom: 15px;
+  right: -5px;
+  z-index: 2000;
+}
+*/
