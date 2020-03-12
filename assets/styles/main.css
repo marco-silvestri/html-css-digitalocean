@@ -14,7 +14,7 @@
 
 /* UTILITES */
 
-.--relative {
+.pos-relative {
   position: relative;
 }
 
@@ -42,7 +42,7 @@ li {
   font-family: 'Roboto', sans-serif;
 }
 
-.__subtitle {
+.section__subtitle {
   color: #6f7b97;
   font-size: 18px;
 }
@@ -51,20 +51,12 @@ li {
   color: #031c4e;
 }
 
-.--disclaimer {
-  font-size: 12px;
-}
-
-.--bold {
+.bold {
   font-weight: 600;
 }
 
-.--extra-bold {
+.extra-bold {
   font-weight: 700;
-}
-
-.--align-center {
-  text-align: center;
 }
 
 /* NAV STYLES */
@@ -137,6 +129,10 @@ background-color: red;
   background-color: #FFF;
 }
 
+.form__disclaimer--extra-small {
+  font-size: 12px;
+}
+
 .btn--full-width {
   display: block;
   width: 100%;
@@ -165,7 +161,7 @@ background-color: red;
   line-height: 10;
 }
 
-/* DEBUG: add media query to smoothen the transition */
+/* DEBUG: add media query to smoothen the transition or USE UL */
 
 .partners__img {
   max-width: 90%;
@@ -205,4 +201,30 @@ background-color: red;
 .deploy__info {
   font-size: 14px;
   color: #5c6a88;
+}
+
+/* Slider section */
+
+.slider__chevron__l::before {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #6f7b97;
+  content: "\f053";
+}
+
+.slider__chevron__r::after {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #031c4e;
+  content: "\f054";
+}
+
+.slider__chevron--font-size {
+  font-size: 48px;
 }
