@@ -26,13 +26,21 @@
   margin-bottom: 40px;
 }
 
-.section_bg--gray {
+.section__bg--gray {
   background-color: #f3f5f9;
+}
+
+.section__bg--gradient {
+  background-image: linear-gradient(#0033cc, #003399);
 }
 
 .section__logo--resize{
   max-height: 30px;
   max-width: 30px;
+}
+
+.auto-margin {
+  margin: auto;
 }
 
 /* TYPOGRAPHY */
@@ -87,8 +95,8 @@ li {
   margin-right: 10px;
 }
 
-.button--nobg-blue {
-  background-color: transparent;
+.button--blue {
+  background-color: #FFF;
   border: 1px solid #006aff;
   border-radius: 3px;
   font-weight: 400;
@@ -239,16 +247,16 @@ background-color: red;
 }
 
 .slider__dot--active {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   border: 2px solid #006aff;
   background-color: #006aff;
 }
 
 .slider__dot--inactive {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   border: 2px solid #006aff;
   background-color: transparent;
@@ -259,10 +267,6 @@ background-color: red;
 }
 
 /* SERVER TABLE */
-
-.section__bg--gradient {
-  background-image: linear-gradient(#0033cc, #003399);
-}
 
 .col__divider--style {
   border-bottom: 1px solid #FFF;
@@ -283,4 +287,12 @@ background-color: red;
 .table__ref__a--style {
   text-decoration: none;
   color: #00cccc;
+}
+
+/* HERO STORIES STYLES */
+
+.hero__container--bg-white {
+  background-color: #FFF;
+  padding: 75px 5px;
+  margin: 25px 0;
 }
