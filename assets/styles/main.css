@@ -30,6 +30,11 @@
   background-color: #f3f5f9;
 }
 
+.section__logo--resize{
+  max-height: 30px;
+  max-width: 30px;
+}
+
 /* TYPOGRAPHY */
 
 h1,
@@ -48,7 +53,7 @@ li {
 }
 
 .section__title--default {
-  color: #031c4e;
+  color: #003366;
 }
 
 .bold {
@@ -187,15 +192,10 @@ background-color: red;
   background-color: #f3f5f9;
 }
 
-.deploy__logo {
-  max-height: 30px;
-  max-width: 30px;
-}
-
 .deploy__title {
   font-size: 20px;
   font-weight: 600;
-  color: #031c4e;
+  color: #003366;
 }
 
 .deploy__info {
@@ -221,7 +221,7 @@ background-color: red;
   right: -40px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #031c4e;
+  color: #003366;
   content: "\f054";
 }
 
@@ -231,7 +231,7 @@ background-color: red;
 
 .slider__caption--style {
   font-size: 16px;
-  color: #031c4e;
+  color: #003366;
 }
 
 .slider__dot--active {
