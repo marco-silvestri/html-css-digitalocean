@@ -228,3 +228,28 @@ background-color: red;
 .slider__chevron--font-size {
   font-size: 48px;
 }
+
+.slider__caption--style {
+  font-size: 16px;
+  color: #031c4e;
+}
+
+.slider__dot--active {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid #006aff;
+  background-color: #006aff;
+}
+
+.slider__dot--inactive {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid #006aff;
+  background-color: transparent;
+}
+
+.slider__dot--inactive:hover {
+  background-color: #006aff;
+}
