@@ -154,8 +154,8 @@ footer a {
   background-color: #FFF;
   border: 1px solid #006aff;
   border-radius: 3px;
-  font-weight: 400;
   color: #006aff;
+  padding: 5px 10px;
 }
 
 .nav--pad-y {
@@ -214,7 +214,7 @@ footer a {
   margin: 10px 0;
 }
 
-.btn--blue {
+.jumbotron__btn--blue {
   background-color: #579aff;
   border: 1px solid #579aff;
   color: #FFF;
@@ -372,8 +372,28 @@ footer a {
 
 .hero__container--bg-white {
   background-color: #FFF;
-  padding: 75px 5px;
-  margin: 25px 0;
+  padding: 60px 30px;
+  margin: 25px 20%;
+}
+
+.hero__chevron__l::before {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #6f7b97;
+  content: "\f053";
+}
+
+.hero__chevron__r::after {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #003366;
+  content: "\f054";
 }
 
 /* FOOTER STYLES */
