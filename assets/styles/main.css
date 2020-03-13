@@ -38,10 +38,6 @@ a {
   position: relative;
 }
 
-.--spacer-btm {
-  margin-bottom: 40px;
-}
-
 .section__bg--gray {
   background-color: #f3f5f9;
 }
@@ -236,8 +232,6 @@ footer a {
   color: #6f7b97;
   font-size: 16px;
 }
-
-/* DEBUG: ADD MEDIA QUERY CALC on SM XS */
 
 @media all and (max-width: 500px) {
   .partners__wrapper {
