@@ -12,14 +12,30 @@
   background: gray;
 } */
 
+/* GENERAL STYLS */
+
+header,
+section,
+footer {
+  padding: 50px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 10px 0;
+}
+
+p,
+a {
+  padding: 5px 0;
+}
+
 /* UTILITES */
 
 .pos-relative {
   position: relative;
-}
-
-.--spacer-top {
-  margin-top: 20px;
 }
 
 .--spacer-btm {
@@ -35,14 +51,30 @@
 }
 
 .section__logo--resize{
-  max-height: 30px;
-  max-width: 30px;
+  max-height: 25px;
+  max-width: 25px;
+  margin: 0;
 }
 
 .auto-margin {
   margin: auto;
 }
 
+.m0 {
+  margin: 0;
+}
+
+.m10 {
+  margin: 10px 0;
+}
+
+.pbtm-20 {
+  padding-bottom: 20px;
+}
+
+.wrapper-70 {
+  width: 70%;
+}
 /* TYPOGRAPHY */
 
 h1,
@@ -66,6 +98,29 @@ li {
 
 .section__title--white {
   color: #FFF;
+}
+
+.sitemap__title--style {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+footer a {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.copyright {
+  color: #ccc;
+  font-size: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.made {
+  color: #555;
+  font-size: 14px;
 }
 
 .bold {
@@ -114,9 +169,12 @@ li {
 /* HAMBURGER */
 
 .hamburger {
-height: 50px;
-width: 50px;
-background-color: red;
+  height: 50px;
+  width: 50px;
+  background-image: url("https://www.primapaginamolise.it/wp-content/uploads/2019/04/024-Lhamburger-Il-panino-preferito-dagli-italiani.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: red;
 }
 
 /* JUMBOTRON */
@@ -173,23 +231,28 @@ background-color: red;
 
 /* PARTNERS */
 
-.partners__wrapper {
-  /*max-width: calc(100% / 6);*/
-  line-height: 10;
-}
-
-/* DEBUG: add media query to smoothen the transition or USE UL */
-
-.partners__img {
-  max-width: 90%;
-  max-height: 90%;
-  vertical-align: middle;
-}
-
 .h3__partners--style {
   text-transform: uppercase;
   color: #6f7b97;
   font-size: 16px;
+}
+
+/* DEBUG: ADD MEDIA QUERY CALC on SM XS */
+
+@media all and (max-width: 500px) {
+  .partners__wrapper {
+    max-width: calc((100% / 3) - 0px);;
+  }
+}
+
+@media all and (min-width: 501px) {
+  .partners__wrapper {
+    max-width: calc((100% / 6) - 10px);
+  }
+}
+
+.partners__img {
+  max-width: 100%;
 }
 
 /* DEPLOY Section */
@@ -216,11 +279,23 @@ background-color: red;
 }
 
 /* Slider section */
+.slider__img-responsive--adapt {
+  max-width: 80%;
+  margin: auto;
+}
+
+.slider__bpad--reset {
+  padding-bottom: 0;
+}
+
+.slider__tpad--reset {
+  padding-top: 0;
+}
 
 .slider__chevron__l::before {
   position: absolute;
-  top: 50%;
-  left: -40px;
+  top: 40%;
+  left: 2%;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #6f7b97;
@@ -229,8 +304,8 @@ background-color: red;
 
 .slider__chevron__r::after {
   position: absolute;
-  top: 50%;
-  right: -40px;
+  top: 40%;
+  right: 2%;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #003366;
@@ -266,7 +341,7 @@ background-color: red;
   background-color: #006aff;
 }
 
-/* SERVER TABLE */
+/* SERVER TABLE ADD FLUSH*/
 
 .col__divider--style {
   border-bottom: 1px solid #FFF;
@@ -287,6 +362,10 @@ background-color: red;
 .table__ref__a--style {
   text-decoration: none;
   color: #00cccc;
+}
+
+.row .col__divider--style:last-child {
+  border-bottom: 1px solid transparent;
 }
 
 /* HERO STORIES STYLES */
